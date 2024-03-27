@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Assistant for your cases</title>
+       <style>
+       .title,.label1 {
+           text-align: right;
+
+           padding-right: 500px;
+       }
+       .form {
+    position: relative;
+    left: 500px;  /* Adjust this value to move the label */
+}
+       .label1, .label2{
+    font-size: 20px;  /* Adjust this value to increase or decrease the text size */
+}
+       .input-field1{
+
+       }
+       .input-field1 {
+    width: 300px;  /* Adjust this value to increase or decrease the width */
+    height: 50px;  /* Adjust this value to increase or decrease the height */
+}
+       .b1{
+               width: 300px;  /* Adjust this value to increase or decrease the width */
+               height: 50px;
+               position: relative;
+               left: 700px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Assistant for your cases</h1>
+    <form class="form" action="/submit" method="post" enctype="multipart/form-data">
+        <label class="label1" for="text">Enter Your Client Name as in report:</label><br>
+        <input class ="input-field1" type="text" id="text" name="text" placeholder="eg. Sam"  checked><br>
+        <br>
+        <label class="label2" for="file">Upload Case Report PDF:</label><br>
+        <input type="file" id="file" name="file" accept=".pdf" checked><br>
+        <br> <br>
+        <input type="submit" value="Submit"  >
+    </form>
+</body>
+
+<div>
+
+</div>
+</html>

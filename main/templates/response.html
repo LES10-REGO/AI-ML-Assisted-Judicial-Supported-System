@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Response</title>
+    <style>
+        .response {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="response">
+        <ul>
+        {% for point in response_text.split('.') %}
+            {% if point.strip() %}
+                <li>{{ point.strip() }}.</li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+
+      <div>
+          <h2>Relevant Cases</h2>
+        {% for case in relevant_cases %}
+            <h4>Similarity Score: {{ case[0] }}</h4>
+            <h4>File Name: {{ case[1] }}</h4>
+            <p>File Content: {{ case[2] }}</p>
+        {% endfor %}
+    </div>
+
+<div>
+
+</div>
+</body>
+</html>
